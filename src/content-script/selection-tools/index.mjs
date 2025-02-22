@@ -13,7 +13,9 @@ import {
 import { getPreferredLanguage } from '../../config/language.mjs'
 
 export const SelectionInteraction = {
+  // Open up a new conversation card.
   CONVERSATION: 'conversation',
+  // Change the selected text.
   CHANGE_SELECTION: 'change-selection',
 }
 
