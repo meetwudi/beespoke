@@ -2,11 +2,11 @@
     <img src="./src/logo.png">
 </p>
 
-<h1 align="center">ChatGPT Box</h1>
+<h1 align="center">BeeSpoke</h1>
 
 <div align="center">
 
-Deep ChatGPT integrations in your browser, completely for free.
+Integrating AI deeply into your browser and make everything bespoke to your needs.
 
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
@@ -14,6 +14,10 @@ Deep ChatGPT integrations in your browser, completely for free.
 [![verfiy][verify-image]][verify-url]
 
 English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
+
+### Acknowledgements
+
+BeeSpoke is forked from [ChatGPTBox](https://github.com/josStorer/chatGPTBox).
 
 ### Install
 
@@ -24,21 +28,21 @@ English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&
 [![Android][Android-image]][Android-url]
 [![Github][Github-image]][Github-url]
 
-[Guide](https://github.com/josStorer/chatGPTBox/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Preview](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Development&Contributing][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video Demonstration](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#Credit)
+[Guide](https://github.com/meetwudi/beespoke/wiki/Guide) &nbsp;&nbsp;|&nbsp;&nbsp; [Preview](#Preview) &nbsp;&nbsp;|&nbsp;&nbsp; [Development&Contributing][dev-url] &nbsp;&nbsp;|&nbsp;&nbsp; [Video Demonstration](https://www.youtube.com/watch?v=E1smDxJvTRs) &nbsp;&nbsp;|&nbsp;&nbsp; [Credit](#Credit)
 
-[dev-url]: https://github.com/josStorer/chatGPTBox/wiki/Development&Contributing
+[dev-url]: https://github.com/meetwudi/beespoke/wiki/Development&Contributing
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg
 
-[license-url]: https://github.com/josStorer/chatGPTBox/blob/master/LICENSE
+[license-url]: https://github.com/meetwudi/beespoke/blob/master/LICENSE
 
 [release-image]: https://img.shields.io/github/release/josStorer/chatGPTBox.svg
 
-[release-url]: https://github.com/josStorer/chatGPTBox/releases/latest
+[release-url]: https://github.com/meetwudi/beespoke/releases/latest
 
-[verify-image]: https://github.com/josStorer/chatGPTBox/workflows/verify-configs/badge.svg
+[verify-image]: https://github.com/meetwudi/beespoke/workflows/verify-configs/badge.svg
 
-[verify-url]: https://github.com/josStorer/chatGPTBox/actions/workflows/verify-configs.yml
+[verify-url]: https://github.com/meetwudi/beespoke/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
@@ -58,11 +62,11 @@ English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&
 
 [Android-image]: https://img.shields.io/badge/-Android-brightgreen?logo=android&logoColor=white
 
-[Android-url]: https://github.com/josStorer/chatGPTBox/wiki/Install#install-to-android
+[Android-url]: https://github.com/meetwudi/beespoke/wiki/Install#install-to-android
 
 [Github-image]: https://img.shields.io/badge/-Github-black?logo=github&logoColor=white
 
-[Github-url]: https://github.com/josStorer/chatGPTBox/wiki/Install
+[Github-url]: https://github.com/meetwudi/beespoke/wiki/Install
 
 </div>
 
@@ -74,7 +78,7 @@ English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&
 
 - You can use projects like https://github.com/BerriAI/litellm / https://github.com/songquanpeng/one-api to convert LLM APIs into OpenAI format and use them in conjunction with ChatGPTBox's `Custom Model` mode
 
-- You can also use [Ollama](https://github.com/josStorer/chatGPTBox/issues/616#issuecomment-1975186467) / https://openrouter.ai/docs#models with ChatGPTBox's `Custom Model` mode
+- You can also use [Ollama](https://github.com/meetwudi/beespoke/issues/616#issuecomment-1975186467) / https://openrouter.ai/docs#models with ChatGPTBox's `Custom Model` mode
 
 ## ✨ Features
 
