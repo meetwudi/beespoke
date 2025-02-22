@@ -1,5 +1,5 @@
-<p align="center" width="100px">
-    <img src="./src/logo.png">
+<p align="center">
+    <img src="./src/logo.png" width="100px">
 </p>
 
 <h1 align="center">BeeSpoke</h1>
