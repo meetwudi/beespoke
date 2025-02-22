@@ -1,7 +1,7 @@
 import { cloneElement, useCallback, useEffect, useState } from 'react'
 import ConversationCard from '../ConversationCard'
 import PropTypes from 'prop-types'
-import { config as toolsConfig } from '../../content-script/selection-tools'
+import { config as toolsConfig, SelectionInteraction } from '../../content-script/selection-tools'
 import { getClientPosition, isMobile, setElementPositionInViewport } from '../../utils'
 import Draggable from 'react-draggable'
 import { useClampWindowSize } from '../../hooks/use-clamp-window-size'
@@ -128,11 +128,15 @@ function FloatingToolbar(props) {
           className: 'chatgptbox-selection-toolbar-button',
           title: name,
           onClick: async () => {
-            const p = getClientPosition(props.container)
-            props.container.style.position = 'fixed'
-            setPosition(p)
-            setPrompt(await genPrompt(selection))
-            setTriggered(true)
+            if (toolsConfig[iconKey].interaction === SelectionInteraction.CONVERSATION) {
+              const p = getClientPosition(props.container)
+              props.container.style.position = 'fixed'
+              setPosition(p)
+              setPrompt(await genPrompt(selection))
+              setTriggered(true)
+            } else {
+              console.log('TODO: change selection')
+            }
           },
         }),
       )

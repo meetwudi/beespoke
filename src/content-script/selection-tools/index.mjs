@@ -12,6 +12,11 @@ import {
 } from 'react-bootstrap-icons'
 import { getPreferredLanguage } from '../../config/language.mjs'
 
+export const SelectionInteraction = {
+  CONVERSATION: 'conversation',
+  CHANGE_SELECTION: 'change-selection',
+}
+
 const createGenPrompt =
   ({
     message = '',
@@ -45,6 +50,7 @@ export const config = {
       message: 'Explain the following',
       includeLanguagePrefix: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   translate: {
     icon: <Translate />,
@@ -52,6 +58,7 @@ export const config = {
     genPrompt: createGenPrompt({
       isTranslation: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   translateToEn: {
     icon: <Globe />,
@@ -60,6 +67,7 @@ export const config = {
       isTranslation: true,
       targetLanguage: 'English',
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   translateToZh: {
     icon: <Globe />,
@@ -68,6 +76,7 @@ export const config = {
       isTranslation: true,
       targetLanguage: 'Chinese',
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   translateBidi: {
     icon: <Globe />,
@@ -76,6 +85,7 @@ export const config = {
       isTranslation: true,
       enableBidirectional: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   summary: {
     icon: <CardHeading />,
@@ -84,6 +94,7 @@ export const config = {
       message: 'Summarize the following as concisely as possible',
       includeLanguagePrefix: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   polish: {
     icon: <Palette />,
@@ -92,6 +103,7 @@ export const config = {
       message:
         'Check the following content for possible diction and grammar problems, and polish it carefully',
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   sentiment: {
     icon: <EmojiSmile />,
@@ -101,6 +113,7 @@ export const config = {
         'Analyze the sentiments expressed in the following content and make a brief summary of the sentiments',
       includeLanguagePrefix: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   divide: {
     icon: <CardList />,
@@ -108,6 +121,7 @@ export const config = {
     genPrompt: createGenPrompt({
       message: 'Divide the following into paragraphs that are easy to read and understand',
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   code: {
     icon: <Braces />,
@@ -116,6 +130,7 @@ export const config = {
       message: 'Explain the following code',
       includeLanguagePrefix: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
   ask: {
     icon: <QuestionCircle />,
@@ -124,6 +139,7 @@ export const config = {
       message: 'Analyze the following content and express your opinion, or give your answer',
       includeLanguagePrefix: true,
     }),
+    interaction: SelectionInteraction.CONVERSATION,
   },
 
   // Editing Tools
@@ -133,5 +149,6 @@ export const config = {
     genPrompt: createGenPrompt({
       message: 'Fix the grammar of the following content',
     }),
+    interaction: SelectionInteraction.CHANGE_SELECTION,
   },
 }
