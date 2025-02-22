@@ -11,7 +11,6 @@ Integrating AI deeply into your browser and make everything bespoke to your need
 [![license][license-image]][license-url]
 [![release][release-image]][release-url]
 [![size](https://img.shields.io/badge/minified%20size-390%20kB-blue)][release-url]
-[![verfiy][verify-image]][verify-url]
 
 English &nbsp;&nbsp;|&nbsp;&nbsp; [Indonesia](README_IN.md) &nbsp;&nbsp;|&nbsp;&nbsp; [简体中文](README_ZH.md) &nbsp;&nbsp;|&nbsp;&nbsp; [日本語](README_JA.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Türkçe](README_TR.md)
 
@@ -39,10 +38,6 @@ BeeSpoke is forked from [ChatGPTBox](https://github.com/josStorer/chatGPTBox).
 [release-image]: https://img.shields.io/github/release/josStorer/chatGPTBox.svg
 
 [release-url]: https://github.com/meetwudi/beespoke/releases/latest
-
-[verify-image]: https://github.com/meetwudi/beespoke/workflows/verify-configs/badge.svg
-
-[verify-url]: https://github.com/meetwudi/beespoke/actions/workflows/verify-configs.yml
 
 [Chrome-image]: https://img.shields.io/badge/-Chrome-brightgreen?logo=google-chrome&logoColor=white
 
