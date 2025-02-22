@@ -8,6 +8,7 @@ import {
   Braces,
   Globe,
   ChatText,
+  Spellcheck,
 } from 'react-bootstrap-icons'
 import { getPreferredLanguage } from '../../config/language.mjs'
 
@@ -122,6 +123,15 @@ export const config = {
     genPrompt: createGenPrompt({
       message: 'Analyze the following content and express your opinion, or give your answer',
       includeLanguagePrefix: true,
+    }),
+  },
+
+  // Editing Tools
+  fixGrammar: {
+    icon: <Spellcheck />,
+    label: 'Fix Grammar',
+    genPrompt: createGenPrompt({
+      message: 'Fix the grammar of the following content',
     }),
   },
 }

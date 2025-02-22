@@ -429,6 +429,7 @@ export const defaultConfig = {
     'divide',
     'code',
     'ask',
+    'fixGrammar',
   ],
   selectionToolsDesc: [
     'Explain',
